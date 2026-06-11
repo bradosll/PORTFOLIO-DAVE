@@ -1204,33 +1204,48 @@ ul {
    CONTACT ME SECTION
    ========================================================================== */
 .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.3fr;
-    gap: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .contact-info-panel {
+    width: 100%;
+    max-width: 680px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 50px 40px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--glass-shadow);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .contact-panel-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: 800;
     margin-bottom: 16px;
+    color: var(--text-primary);
 }
 
 .contact-panel-text {
     color: var(--text-secondary);
     font-size: 1.05rem;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    max-width: 520px;
 }
 
 .contact-details {
     display: flex;
     flex-direction: column;
     gap: 28px;
-    margin-bottom: 48px;
+    width: 100%;
+    max-width: 440px;
+    align-items: flex-start;
+    margin: 20px auto 0;
 }
 
 .contact-detail-item {
@@ -1609,9 +1624,8 @@ ul {
         grid-template-columns: repeat(2, 1fr);
     }
     
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 48px;
+    .contact-info-panel {
+        padding: 40px 24px;
     }
     
     .form-row {
