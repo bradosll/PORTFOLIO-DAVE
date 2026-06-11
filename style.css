@@ -1245,6 +1245,7 @@ ul {
     width: 100%;
     align-items: center;
     margin: 30px auto 0;
+    max-width: 100%;
 }
 
 .contact-detail-item {
@@ -1253,10 +1254,15 @@ ul {
     align-items: center;
     text-align: center;
     gap: 12px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .detail-text {
     text-align: center;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .detail-icon {
@@ -1285,8 +1291,10 @@ ul {
     font-size: 1.05rem;
     font-weight: 600;
     color: var(--text-primary);
-    word-break: break-word;
+    word-break: break-all;
     overflow-wrap: anywhere;
+    display: block;
+    width: 100%;
 }
 
 .detail-text a:hover {
