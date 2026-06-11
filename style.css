@@ -1285,6 +1285,8 @@ ul {
     font-size: 1.05rem;
     font-weight: 600;
     color: var(--text-primary);
+    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 
 .detail-text a:hover {
@@ -1667,5 +1669,9 @@ ul {
     
     .contact-form-panel {
         padding: 24px;
+    }
+    
+    .detail-text a, .detail-text p {
+        font-size: 0.95rem;
     }
 }
