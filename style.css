@@ -1241,17 +1241,22 @@ ul {
 .contact-details {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 32px;
     width: 100%;
-    max-width: 440px;
-    align-items: flex-start;
-    margin: 20px auto 0;
+    align-items: center;
+    margin: 30px auto 0;
 }
 
 .contact-detail-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    text-align: center;
+    gap: 12px;
+}
+
+.detail-text {
+    text-align: center;
 }
 
 .detail-icon {
