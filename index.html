@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Ervin Dave Salas Jumamoy - IT Specialist, aspiring front-end developer, digital artist, and IoT builder at Davao del Norte State College.">
+    <meta name="keywords"
+        content="Ervin Dave Jumamoy, Jumamoy, Portfolio, Information Technology, Davao del Norte State College, Front-End Developer, Digital Artist, Canva, IoT">
+    <meta name="author" content="Ervin Dave Salas Jumamoy">
+    <title>Ervin Dave Jumamoy | IT Specialist & Aspiring Front-End Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Canvas for Interactive Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span>JUMAMOY</span><span class="dot">.</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Me</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Landing Page (Hero Section) -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge animate-fade-in">IT Student & Aspiring Developer</div>
+                    <p class="hero-subtitle">
+                        Hi, I'm <span class="highlight">Ervin Dave Jumamoy</span>. I build responsive web applications,
+                        design digital art, and explore Internet of Things (IoT) systems.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-image-wrapper reveal-left">
+                        <div class="about-image-card">
+                            <img src="assets/jumamoy.png" alt="Jumamoy Avatar" class="about-avatar">
+                            <div class="glow-bg"></div>
+                        </div>
+                    </div>
+
+                    <div class="about-content reveal-right">
+                        <h3 class="about-greeting">Bridging Software & Physical Systems</h3>
+                        <p class="about-bio">
+                            I am an Information Technology student at Davao del Norte State College. My passion lies in
+                            creating responsive, clean interfaces and developing interactive solutions. I specialize in
+                            entry-level front-end development, digital design, and basic Internet of Things (IoT)
+                            projects.
+                        </p>
+                        <p class="about-bio">
+                            I love using code to solve real-world problems—whether that's designing branding assets,
+                            structuring web layouts, or configuring microcontrollers to connect hardware to the web.
+                        </p>
+
+                        <!-- Tech Stack Slider / Tabs -->
+                        <div class="skills-wrapper">
+                            <h4 class="skills-title">Core Competencies</h4>
+                            <div class="skills-grid">
+                                <div class="skill-card" data-tooltip="HTML5, CSS3, JavaScript, Responsive Design">
+                                    <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                                    <span class="skill-name">Frontend Dev</span>
+                                </div>
+                                <div class="skill-card" data-tooltip="Canva, Graphic Layouts, UI Design">
+                                    <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+                                    <span class="skill-name">Digital Artist</span>
+                                </div>
+                                <div class="skill-card" data-tooltip="Arduino, ESP32, Smart Sensors">
+                                    <div class="skill-icon"><i class="fa-solid fa-microchip"></i></div>
+                                    <span class="skill-name">Basic IoT</span>
+                                </div>
+                                <div class="skill-card" data-tooltip="Systems Administration, Networks, Tech Support">
+                                    <div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                    <span class="skill-name">IT Systems</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bars -->
+                        <div class="progress-container">
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-info">
+                                    <span>Entry-Level Frontend Development</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-info">
+                                    <span>Digital Art (Canva)</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-info">
+                                    <span>Basic IoT Integration</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Journey  -->
+                <div class="about-journey-wrapper reveal-up">
+                    <div class="">
+                        <!-- Left Column: Educational & Work Journey -->
+                        <div class="timeline-column">
+                            <h3 class="skills-title" style="margin-bottom: 24px; font-size: 1.5rem;"><i
+                                    class="fa-solid fa-graduation-cap"></i>Work Journey</h3>
+                            <div class="timeline">
+                                <!-- Education 1 -->
+                                <div class="timeline-item reveal-up">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2026</div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                        <h3 class="timeline-title">On-the-Job Trainee – Provincial Information,
+                                            Communication, and Technology Office (PICTO)</h3>
+                                        <p class="timeline-desc">
+                                            Gained practical experience in network infrastructure support, fiber optic
+                                            cable deployment, computer troubleshooting, internet connectivity testing,
+                                            and telecommunications installation. Assisted technical staff in maintaining
+                                            ICT equipment and ensuring reliable network operations across government
+                                            facilities.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Experience 1 -->
+                                <div class="timeline-item reveal-up">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2023</div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                        <h3 class="timeline-title">Production Helper</h3>
+                                        <p class="timeline-desc">Tibungco Superiorsnack Corporation. Enhanced
+                                            operational efficiency, worked under strict schedules, and coordinated
+                                            within large production teams.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Experience 2 -->
+                                <div class="timeline-item reveal-up">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2022</div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-icon"><i class="fa-solid fa-hands-helping"></i></div>
+                                        <h3 class="timeline-title">Dishwasher</h3>
+                                        <p class="timeline-desc">Aqua Glaive Purify Water. Maintained sanitation
+                                            protocols, supported logistics and quality standards in a fast-paced
+                                            environment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Certificates</span>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="certificates-grid">
+                    <!-- Certificate 1 -->
+                    <div class="cert-card-v2 reveal-up">
+                        <div class="cert-media">
+                            <div class="certificate-image-container">
+                                <img src="assets/certificate of completion.png"
+                                    alt="Capstone User Acceptability Testing Certificate" class="cert-img-element">
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-title-text">Capstone Completion Certificate</h3>
+                            <span class="cert-org">Municipality of Asuncion</span>
+                            <p class="cert-description">Validates successful completion and presentation
+                                of the capstone project "Development of Geospatial and Clustering Analysis System for
+                                Optimized Planning and Budgeting in Gender Development".</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="cert-card-v2 reveal-up">
+                        <div class="cert-media">
+                            <div class="certificate-image-container">
+                                <img src="assets/certificate of ethical hacker.png"
+                                    alt="Cisco Networking Academy Ethical Hacker Certificate" class="cert-img-element">
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-title-text">Cisco Ethical Hacker</h3>
+                            <span class="cert-org">Cisco Networking Academy</span>
+                            <p class="cert-description">Acknowledges completion of the Cisco Networking Academy course
+                                in Ethical Hacking, covering network mapping, vulnerability testing, and secure system
+                                design.</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3 -->
+                    <div class="cert-card-v2 reveal-up">
+                        <div class="cert-media">
+                            <div class="certificate-image-container">
+                                <img src="assets/certificate of parcitipation.png"
+                                    alt="Capstone Project Exhibit Participation Certificate" class="cert-img-element">
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-title-text">Capstone Exhibit Participation</h3>
+                            <span class="cert-org">DNSC Institute of Computing</span>
+                            <p class="cert-description">Awarded for active participation and project presentation in the
+                                BSIT & BSIS Capstone Project Exhibit 2026 for the Gender Development system.</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 4 -->
+                    <div class="cert-card-v2 reveal-up">
+                        <div class="cert-media">
+                            <div class="certificate-image-container">
+                                <img src="assets/certificate of advance seminar.png"
+                                    alt="BSIT Advanced Seminar Series Completion Certificate" class="cert-img-element">
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-title-text">Advanced Seminar Series</h3>
+                            <span class="cert-org">DNSC Institute of Computing</span>
+                            <p class="cert-description">Acknowledges completion of the 4th Year BSIT Advanced Seminar
+                                Series, "Journey from Science Practitioner to Information Technology Specialist,"
+                                preparing students for the IT industry.</p>
+                        </div>
+                    </div>
+                    <!-- Certificate 4 -->
+                    <div class="cert-card-v2 reveal-up">
+                        <div class="cert-media">
+                            <div class="certificate-image-container">
+                                <img src="assets/certificate of completion ojt.png"
+                                    alt="BSIT Advanced Seminar Series Completion Certificate" class="cert-img-element">
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-title-text">Certificate of Completion – On-the-Job Training (OJT)</h3>
+                            <span class="cert-org">DAVAO DE ORO - Provincial Information, Communication, and Technology
+                                Office (PICTO)</span>
+                            <p class="cert-description">
+                                Recognizes the successful completion of the On-the-Job Training program, providing
+                                hands-on experience in information and communications technology services, network
+                                support, technical troubleshooting, and ICT infrastructure operations within a
+                                professional workplace setting.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Projects</span>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="project-filters reveal-up">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="design">Digital Art</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card reveal-up" data-category="web">
+                        <div class="project-image-container">
+                            <img src="assets/GAD.png" alt="DNSC Student Portal Concept" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" aria-label="View live project"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="#" class="project-link-btn" aria-label="View source code"><i
+                                            class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag-badge">Web Development</span>
+                            <h3 class="project-card-title">Development of Geospatial and Clustering Analysis System for
+                                Optimized Planning and Budgeting in Gender Development</h3>
+                            <p class="project-desc">
+                                A web-based Planning and Budgeting Management System that integrates geospatial mapping
+                                and K-Means clustering to support Gender and Development (GAD) planning, budget
+                                allocation, project monitoring, and data-driven decision-making for local government
+                                units.
+                            </p>
+                            <div class="project-tech">
+                                <span>Vue.js</span>
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>K-Means</span>
+                                <span>Geospatial</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reveal-up" data-category="design">
+                        <div class="project-image-container">
+                            <img src="assets/scanease.png" alt="Branding Kit & Vector Showcase" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" aria-label="View live project"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="#" class="project-link-btn" aria-label="View source code"><i
+                                            class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag-badge">Web Application</span>
+                            <h3 class="project-card-title">ScanEase</h3>
+                            <p class="project-desc">
+                                A document scanning and management system designed to simplify file digitization,
+                                organization, and retrieval. The system provides an efficient way to manage scanned
+                                documents and improve accessibility of digital records.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Database</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Contact Me</span>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-panel reveal-left">
+                        <h3 class="contact-panel-title">Let's build something extraordinary</h3>
+                        <p class="contact-panel-text">
+                            Whether you have an upcoming project, a complex bug to crack, or simply want to chat about
+                            futuristic design trends, I'm always open to connecting!
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="detail-text">
+                                    <span>Email Address</span>
+                                    <a href="mailto:jumamoy.ervindave@dnsc.edu.ph">jumamoy.ervindave@dnsc.edu.ph</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="detail-text">
+                                    <span>Contact Number</span>
+                                    <a href="tel:09926147529">09926147529</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="detail-text">
+                                    <span>Address</span>
+                                    <p>Purok 9 Mahayag, Bunawan, Davao city</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo"><span>JUMAMOY</span><span class="dot">.</span></a>
+                <p> Entry Level Web Development projects, digital art, and IoT systems.</p>
+            </div>
+            <div class="footer-bottom">
+                <a href="#home" class="back-to-top" aria-label="Back to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Certificate Zoom -->
+    <div id="cert-lightbox" class="cert-modal">
+        <div class="cert-modal-content">
+            <button id="cert-lightbox-close" class="cert-modal-close" aria-label="Close modal">&times;</button>
+            <img id="cert-lightbox-img" src="" alt="Certificate zoom view" class="cert-modal-img">
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
