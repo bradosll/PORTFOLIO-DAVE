@@ -1701,6 +1701,18 @@ ul {
 
     .contact-info-panel {
         padding: 30px 20px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .contact-form-panel {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     .contact-panel-title {
@@ -1711,14 +1723,27 @@ ul {
         flex-direction: column;
         text-align: center;
         gap: 12px;
+        width: 100%;
     }
 
     .detail-text {
         text-align: center;
+        width: 100%;
+    }
+
+    .detail-text a, .detail-text p {
+        word-break: break-all;
+        word-wrap: break-word;
+        white-space: normal;
+        max-width: 100%;
     }
 
     .form-row {
         grid-template-columns: 1fr;
+    }
+
+    .form-group input, .form-group textarea {
+        max-width: 100%;
     }
 
     .hero-stats {
