@@ -1249,7 +1249,6 @@ ul {
 
 .contact-info-panel {
     width: 100%;
-    max-width: 680px;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     padding: 50px 40px;
@@ -1280,7 +1279,6 @@ ul {
     flex-direction: column;
     gap: 24px;
     width: 100%;
-    max-width: 420px;
     margin: 0 auto;
 }
 
@@ -1615,11 +1613,14 @@ ul {
     }
 
     .about-grid {
+        display: flex;
+        flex-direction: column;
         gap: 40px;
     }
 
     .contact-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 48px;
     }
 }
@@ -1686,7 +1687,7 @@ ul {
     }
 
     /* Layouts */
-    .about-grid {
+    .about-grid, .contact-grid {
         grid-template-columns: 1fr;
         gap: 48px;
     }
@@ -1702,17 +1703,13 @@ ul {
     .contact-info-panel {
         padding: 30px 20px;
         width: 100%;
-        max-width: 100%;
         box-sizing: border-box;
-        overflow: hidden;
     }
 
     .contact-form-panel {
-        width: 100%;
-        max-width: 100%;
         padding: 30px 20px;
+        width: 100%;
         box-sizing: border-box;
-        overflow: hidden;
     }
 
     .contact-panel-title {
@@ -1735,15 +1732,16 @@ ul {
         word-break: break-all;
         word-wrap: break-word;
         white-space: normal;
-        max-width: 100%;
+        display: block;
+        width: 100%;
     }
 
     .form-row {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .form-group input, .form-group textarea {
-        max-width: 100%;
+        width: 100%;
     }
 
     .hero-stats {
