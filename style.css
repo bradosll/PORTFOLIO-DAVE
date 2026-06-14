@@ -1617,6 +1617,11 @@ ul {
     .about-grid {
         gap: 40px;
     }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1694,9 +1699,22 @@ ul {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 48px;
+    .contact-info-panel {
+        padding: 30px 20px;
+    }
+
+    .contact-panel-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-detail-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .detail-text {
+        text-align: center;
     }
 
     .form-row {
