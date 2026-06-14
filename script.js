@@ -274,9 +274,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================================================
     // CONTACT FORM INTERACTION
     // ==========================================================================
-    const contactForm = document.getElementById('portfolio-contact-form');
-    const successOverlay = document.getElementById('form-success-overlay');
-    const closeOverlayBtn = document.getElementById('overlay-close');
+    const contactForm = document.getElementById('contact-form');
+    const successOverlay = document.getElementById('form-overlay');
+    const closeOverlayBtn = document.getElementById('close-overlay');
 
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();

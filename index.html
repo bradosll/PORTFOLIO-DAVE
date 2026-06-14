@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -230,6 +230,26 @@
                 </div>
 
                 <div class="certificates-grid">
+                    <!-- Certificate 4 -->
+                    <div class="cert-card-v2 reveal-up">
+                        <div class="cert-media">
+                            <div class="certificate-image-container">
+                                <img src="assets/certificate of completion ojt.png"
+                                    alt="BSIT Advanced Seminar Series Completion Certificate" class="cert-img-element">
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-title-text">Certificate of Completion – On-the-Job Training (OJT)</h3>
+                            <span class="cert-org">DAVAO DE ORO - Provincial Information, Communication, and Technology
+                                Office (PICTO)</span>
+                            <p class="cert-description">
+                                Recognizes the successful completion of the On-the-Job Training program, providing
+                                hands-on experience in information and communications technology services, network
+                                support, technical troubleshooting, and ICT infrastructure operations within a
+                                professional workplace setting.
+                            </p>
+                        </div>
+                    </div>
                     <!-- Certificate 1 -->
                     <div class="cert-card-v2 reveal-up">
                         <div class="cert-media">
@@ -296,26 +316,7 @@
                                 preparing students for the IT industry.</p>
                         </div>
                     </div>
-                    <!-- Certificate 4 -->
-                    <div class="cert-card-v2 reveal-up">
-                        <div class="cert-media">
-                            <div class="certificate-image-container">
-                                <img src="assets/certificate of completion ojt.png"
-                                    alt="BSIT Advanced Seminar Series Completion Certificate" class="cert-img-element">
-                            </div>
-                        </div>
-                        <div class="cert-info">
-                            <h3 class="cert-title-text">Certificate of Completion – On-the-Job Training (OJT)</h3>
-                            <span class="cert-org">DAVAO DE ORO - Provincial Information, Communication, and Technology
-                                Office (PICTO)</span>
-                            <p class="cert-description">
-                                Recognizes the successful completion of the On-the-Job Training program, providing
-                                hands-on experience in information and communications technology services, network
-                                support, technical troubleshooting, and ICT infrastructure operations within a
-                                professional workplace setting.
-                            </p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -411,7 +412,7 @@
                     <div class="title-underline"></div>
                 </div>
 
-                <div class="contact">
+                <div class="contact-grid">
                     <div class="contact-info-panel">
                         <h3 class="contact-panel-title">Let's build something extraordinary</h3>
                         <p class="contact-panel-text">
@@ -440,6 +441,42 @@
                                     <span>Address</span>
                                     <p>Purok 9 Mahayag, Bunawan, Davao city</p>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Hello! I'd like to talk about..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                Send Message <i class="fa-solid fa-paper-plane send-icon"></i>
+                            </button>
+                        </form>
+
+                        <div class="form-overlay" id="form-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-circle-check success-checkmark"></i>
+                                <h3>Message Sent!</h3>
+                                <p>Thanks for reaching out. I'll get back to you soon.</p>
+                                <button type="button" class="btn btn-secondary" id="close-overlay">Close</button>
                             </div>
                         </div>
                     </div>
